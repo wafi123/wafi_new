@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<title>States</title>
+</head>
+<body>
+	<br>
+      <ul>
+       	 <li id="star" onclick="myVis('hidden')">Kerala</li>
+      	      <p id="ker" onclick="myDel()">Trivandrum</p>
+      	 <li id="star1" onclick="myVis2()">Tamil Nadu</li>
+               <p id="tn" onclick="myDel2()">Chennai</p>
+          <li id="star2" onclick="myVis3()">Karnataka</li>
+      	      <p id="ka" onclick="myDel3()">Bengaluru</p>
+      	 <li id="star3" onclick="myVis4()">Himachal Pradesh</li>
+             <div id="hp" onclick="myDel4()">
+      	      <p>Shimla (summer)</p>
+      	      <p>Dharmashala (winter)</p>
+            </div>
+      	 <li id="star4" onclick="myVis5()">Arunachal Pradesh</li>
+      	      <p id="ap" onclick="myDel5()">Itanagar</p>
+      </ul>
+             <div>
+             	<button class="btn btn-info" type="button" onclick="change()">Click here</button>
+             </div>
+
+              <script type="text/javascript">
+         function change() {
+
+            var str1 = document.getElementById("star").innerHTML;
+            var str2 = str1+"*";
+            document.getElementById("star").innerHTML= str2;
+
+            var str3 = document.getElementById("star1").innerHTML;
+            var str4 = str3+"*";
+            document.getElementById("star1").innerHTML= str4;
+
+            var str5 = document.getElementById("star2").innerHTML;
+            var str6 = str5+"*";
+            document.getElementById("star2").innerHTML= str6;
+
+            var str7 = document.getElementById("star3").innerHTML;
+            var str8 = str7+"*";
+            document.getElementById("star3").innerHTML= str8;
+
+            var str9 = document.getElementById("star4").innerHTML;
+            var str10 = str9+"*";
+            document.getElementById("star4").innerHTML= str10;
+         }
+
+         function myDel(){
+            element= document.getElementById('ker');
+             element.style.visibility= 'hidden';
+         }
+
+           function myVis(){
+             element= document.getElementById('ker');
+              element.style.visibility= 'visible';
+           }
+         
+            function myDel2(){
+             element= document.getElementById('tn');
+              element.style.visibility= 'hidden';
+            }
+
+              function myVis2(){
+               element= document.getElementById('tn');
+                element.style.visibility= 'visible';
+             }
+
+               function myDel3(){
+                element= document.getElementById('ka');
+                 element.style.visibility= 'hidden';
+              }
+
+                function myVis3(){
+                 element= document.getElementById('ka');
+                  element.style.visibility= 'visible';
+               }
+
+                 function myDel4(){
+                  element= document.getElementById('hp');
+                   element.style.visibility= 'hidden';
+                }
+
+                  function myVis4(){
+                   element= document.getElementById('hp');
+                    element.style.visibility= 'visible';
+                 }
+
+                   function myDel5(){
+                    element= document.getElementById('ap');
+                     element.style.visibility= 'hidden';
+                  }
+
+                    function myVis5(){
+                     element= document.getElementById('ap');
+                      element.style.visibility= 'visible';
+                   }
+
+      </script>
+</body>
+</html>
